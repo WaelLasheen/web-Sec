@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Team Roster - Simple</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 18px;
+            background: #f8f8f8;
+            color: #222;
+        }
+
+        tr,
+        th,
+        td {
+            text-align: center;
+            border: 1px solid #222;
+            padding: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 6px;
+        }
+
+        th {
+            background: #6b8fd6;
+            color: #fff;
+        }
+
+        a {
+            color: #333;
+            text-decoration: none;
+        }
+
+        .oneCell {
+            font-style: italic;
+            color: #666;
+            padding: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <th></th>
+            <th>Team Name</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+            <th>Show on Roster</th>
+            <th></th>
+        </tr>
+
+        <tr>
+            <td class="oneCell" colspan="6">
+                Move to another Team
+            </td>
+        </tr>
+
+
+        <tr>
+            <td><a href="#">edit</a></td>
+            <td>Team A</td>
+            <td>19/01/2012</td>
+            <td>Ongoing</td>
+            <td>yes</td>
+            <td><a href="#">delete</a></td>
+        </tr>
+
+        <tr>
+            <td><a href="#">edit</a></td>
+            <td>Team B</td>
+            <td>24/10/2011</td>
+            <td>18/01/2012</td>
+            <td>no</td>
+            <td><a href="#">delete</a></td>
+        </tr>
+
+        <tr>
+            <td class="oneCell" colspan="6">
+                Not in a team between 12/08/2011 and 23/10/2011. <a class="small-link" href="#">Add to a
+                    Team</a>
+            </td>
+        </tr>
+
+        <tr>
+            <td><a href="#">edit</a></td>
+            <td>Team B</td>
+            <td>1/01/2011</td>
+            <td>11/08/2011</td>
+            <td>yes</td>
+            <td><a href="#">delete</a></td>
+        </tr>
+        <tr>
+            <td class="oneCell" colspan="6">
+                Add to a team prior to 01/01/2011
+            </td>
+        </tr>
+    </table>
+    </div>
+</body>
+
+</html>
