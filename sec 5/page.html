@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Form</title>
+    <style>
+        body {
+            background: #222;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+
+        .form-container {
+            width: 300px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: inline-block;
+            width: 80px;
+        }
+
+        input, select {
+            width: 180px;
+            padding: 6px;
+            margin: 6px 0;
+            background: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .gender-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin: 6px 0;
+        }
+
+        button {
+            width: 100%;
+            padding: 8px;
+            background: #8b0000; /* deep red */
+            border: none;
+            border-radius: 4px;
+            color: white;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Join University</h1>
+
+<div class="form-container">
+    <form>
+        <div>
+            <label>Name:</label>
+            <input type="text">
+        </div>
+
+        <div>
+            <label>Grade:</label>
+            <input type="text">
+        </div>
+
+        <div class="gender-group">
+            <label>Gender:</label>
+            <input type="radio" name="g"> Male
+            <input type="radio" name="g"> Female
+        </div>
+
+        <div>
+            <label>University:</label>
+            <select>
+                <option>Cairo University</option>
+                <option>Alex University</option>
+                <option>Mansoura University</option>
+            </select>
+        </div>
+
+        <button type="submit">Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
